@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Weather Helper",
+    "name_for_model": "weatherhelper",
+    "description_for_human": "Provides weather information for the whole world",
+    "description_for_model": "Plugin for providing weather information. This plugin can retrieve current weather data and forecast for the next few days for a specified city. The data includes temperature, humidity, wind speed, and general weather conditions like clear, cloudy, or rainy. To use this plugin, the model should prompt with the name of the city for which the weather information is required. For example, 'What is the current weather in New York?' or 'Tell me the weather forecast for the next three days in London.' The plugin will return raw data including the city name, temperature, humidity, wind speed, and weather conditions for the current day and the forecast for the following days. The model can then use this data to construct a natural language response.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://gptweather.skirano.repl.co/openapi.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://your-app-url.com/.well-known/logo.png",
+    "contact_email": "***",
+    "legal_info_url": "https://example.com/legal"
+}

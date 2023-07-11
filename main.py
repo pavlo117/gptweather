@@ -4,6 +4,13 @@ import quart
 from quart import request, Response
 import requests
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # загружает переменные окружения из файла .env
+# получает значение переменной окружения
+api_key = os.getenv("OPENWEATHER_API_KEY")
+
 app = quart_cors.cors(quart.Quart(__name__),
                       allow_origin="https://chat.openai.com")
 
@@ -12,7 +19,6 @@ app = quart_cors.cors(quart.Quart(__name__),
 async def get_weather():
   req_data = await request.get_json(force=True)
   city = req_data["city"]
-  api_key = "YOUR API KEY HERE"
   url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
   response = requests.get(url)
   return Response(response=json.dumps(response.json()), status=200)
@@ -27,7 +33,7 @@ async def plugin_manifest():
     return Response(text, mimetype="text/json")
 
 
-@app.get("/openapi.yaml")
+@app.get("/.well-known/openapi.yaml")
 async def openapi_spec():
   host = request.headers['Host']
   with open("openapi.yaml") as f:

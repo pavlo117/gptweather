@@ -1,0 +1,12 @@
+Legal Information for the Weather Helper Plugin
+Plugin Description
+The Weather Helper is a plugin designed to provide weather information. The plugin does not require any form of authentication and does not process any personal information.
+
+Data Usage
+The Weather Helper plugin utilizes weather data provided by OpenWeatherMap. This data is used solely for the purpose of providing weather information in response to user queries.
+
+Liability
+The developer of the plugin is not responsible for the accuracy or timeliness of the weather information provided. The weather information is provided "as is" and "as available", and its use is at your own risk.
+
+Changes to Legal Information
+This legal information may be updated at any time without prior notice. Please check this page regularly for updates.
