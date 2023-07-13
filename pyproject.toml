@@ -5,15 +5,15 @@ description = ""
 authors = ["@rUv"]
 
 [tool.poetry.dependencies]
-python = ">=3.10.0,<3.11"
+python = ">=3.10.0"
 numpy = "^1.22.2"
-replit = "^3.2.4"
 Flask = "^2.2.0"
 urllib3 = "^1.26.12"
 openai = "^0.10.2"
 quart = "^0.15.0"
 quart-cors = "^0.6.0"
 python-dotenv = "^1.0.0"
+jinja2 = "^3.1.2"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"
