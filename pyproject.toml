@@ -16,7 +16,7 @@ quart-cors = "^0.6.0"
 jinja2 = "^3.1.2"
 # debugpy = "^1.6.7"
 
-[tool.poetry.dev-dependencies]
+[tool.acpoetry.dev-dependencies]
 debugpy = "^1.6.2"
 
 [build-system]
