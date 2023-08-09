@@ -635,13 +635,13 @@ files = [
 
 [[package]]
 name = "tqdm"
-version = "4.65.1"
+version = "4.65.2"
 description = "Fast, Extensible Progress Meter"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "tqdm-4.65.1-py3-none-any.whl", hash = "sha256:16181c62ad2c6f8f6f29876e66322faad1c7fd3cc70aa9cc25ff63e50d1da031"},
-    {file = "tqdm-4.65.1.tar.gz", hash = "sha256:2cb0075cc5269f8edac40bdeb757cc36ab5b6648caf014822b67e1a49fba141d"},
+    {file = "tqdm-4.65.2-py3-none-any.whl", hash = "sha256:6c431f7dee4f57284c8f4bd2eb1d4af00d730d38cc6098bd79880bcbec676276"},
+    {file = "tqdm-4.65.2.tar.gz", hash = "sha256:5f7d8b4ac76016ce9d51a7f0ea30d30984888d97c474fdc4a4148abfb5ee76aa"},
 ]
 
 [package.dependencies]
@@ -725,4 +725,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "=3.10.0"
-content-hash = "708849d6658ac430520802f19a7a134e7f2117ce1123ee26416391621c47ec14"
+content-hash = "034bf138595a1f3c9f16ca092a772bfd9b55c3955d734d1e3c92fdbb72a0da9e"
