@@ -5,7 +5,7 @@ description = ""
 authors = ["@rUv"]
 
 [tool.poetry.dependencies]
-python = "=3.11.4"
+python = "=3.11.2"
 numpy = "^1.25.2"
 Flask = "^2.2.2"
 urllib3 = "^2.0.4"
