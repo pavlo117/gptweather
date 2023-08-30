@@ -27,7 +27,7 @@ async def get_weather():
 @app.get("/.well-known/ai-plugin.json")
 async def plugin_manifest():
   host = request.headers['Host']
-  with open("ai-plugin.json") as f:
+  with open("/.well-known/ai-plugin.json") as f:
     text = f.read()
     text = text.replace("PLUGIN_HOSTNAME", f"https://{host}")
     return Response(text, mimetype="text/json")
@@ -36,10 +36,11 @@ async def plugin_manifest():
 @app.get("/.well-known/openapi.yaml")
 async def openapi_spec():
   host = request.headers['Host']
-  with open("openapi.yaml") as f:
+  with open("/.well-known/openapi.yaml") as f:
     text = f.read()
     text = text.replace("PLUGIN_HOSTNAME", f"https://{host}")
     return Response(text, mimetype="text/yaml")
+
 
 
 def main():
@@ -48,3 +49,5 @@ def main():
 
 if __name__ == "__main__":
   main()
+
+
