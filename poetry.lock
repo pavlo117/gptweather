@@ -214,26 +214,25 @@ files = [
 
 [[package]]
 name = "hypercorn"
-version = "0.11.2"
-description = "A ASGI Server based on Hyper libraries and inspired by Gunicorn."
+version = "0.14.4"
+description = "A ASGI Server based on Hyper libraries and inspired by Gunicorn"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "Hypercorn-0.11.2-py3-none-any.whl", hash = "sha256:8007c10f81566920f8ae12c0e26e146f94ca70506da964b5a727ad610aa1d821"},
-    {file = "Hypercorn-0.11.2.tar.gz", hash = "sha256:5ba1e719c521080abd698ff5781a2331e34ef50fc1c89a50960538115a896a9a"},
+    {file = "hypercorn-0.14.4-py3-none-any.whl", hash = "sha256:f956200dbf8677684e6e976219ffa6691d6cf795281184b41dbb0b135ab37b8d"},
+    {file = "hypercorn-0.14.4.tar.gz", hash = "sha256:3fa504efc46a271640023c9b88c3184fd64993f47a282e8ae1a13ccb285c2f67"},
 ]
 
 [package.dependencies]
 h11 = "*"
 h2 = ">=3.1.0"
 priority = "*"
-toml = "*"
 wsproto = ">=0.14.0"
 
 [package.extras]
+docs = ["pydata_sphinx_theme"]
 h3 = ["aioquic (>=0.9.0,<1.0)"]
-tests = ["hypothesis", "mock", "pytest", "pytest-asyncio", "pytest-cov", "pytest-trio", "trio"]
-trio = ["trio (>=0.11.0)"]
+trio = ["exceptiongroup (>=1.1.0)", "trio (>=0.22.0)"]
 uvloop = ["uvloop"]
 
 [[package]]
@@ -608,17 +607,6 @@ files = [
 ]
 
 [[package]]
-name = "toml"
-version = "0.10.2"
-description = "Python Library for Tom's Obvious, Minimal Language"
-optional = false
-python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-files = [
-    {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
-    {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
-]
-
-[[package]]
 name = "tqdm"
 version = "4.66.1"
 description = "Fast, Extensible Progress Meter"
@@ -711,4 +699,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "=3.11.2"
-content-hash = "6f172696af78949d6d9b71771ba1ca09823b979e7e423232f552841e4711339d"
+content-hash = "ee67b624dccc631bda1c22b35865d510d6e3639ebeeda72b34ad9aa45bda5562"
