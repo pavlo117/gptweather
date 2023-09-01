@@ -3,7 +3,7 @@ info:
   description: A plugin that allows the user to get current weather information for a specified city.
   version: 'v1'
 servers:
-  - url: PLUGIN_HOSTNAME
+  - url: ${{ env.PLUGIN_HOSTNAME }}
 paths:
   /weather:
     post:
